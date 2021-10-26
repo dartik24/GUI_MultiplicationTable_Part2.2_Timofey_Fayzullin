@@ -5,7 +5,7 @@ Timofey Fayzullin, Umass Lowell Computer Science,
 timofey_fayzullin@student.uml.edu
 Copyright (c) 2021 by Timofey. All rights reserved. May be freely copid or
 excerpted for educational purposes with credit to the author.
-update by TF on October 4th, 2021 at 8:14 PM*/
+update by TF on October 26th, 2021 at 8:14 PM*/
 
 function makeAchart(num){
 //taking in values from input table and converting them into vars
@@ -74,8 +74,9 @@ function makeAchart(num){
 }
 
 
-
+/*jq documeant bootup function*/
 $(document).ready(function(){
+  /*errors*/
   $("#input").validate({
     rules:{
       botr:{
@@ -120,6 +121,7 @@ $(document).ready(function(){
     errorLabelContainer: ".error"
   });
 
+  /*button blur*/
   $("#input").on('keyup blur', function(){
     if($("#input").validate().checkForm()){
       $('#clickMe').prop('disabled', false);
@@ -129,6 +131,7 @@ $(document).ready(function(){
     }
   });
 
+  /*slider setup*/
   $( "#botrSlider" ).slider({
     range: "max",
     min: -100,
@@ -176,9 +179,11 @@ $(document).ready(function(){
     }
   });
   $( "#topc" ).val( $( "#topcSlider" ).slider( "value" ) );
-
+  
+  /*tabs setup*/
   $( "#tabs" ).tabs();
 
+  /*tabs generation*/
   $("#clickMe").click(function() {
 
     var num_tabs = $("#tabs ul li").length + 1;
@@ -197,7 +202,7 @@ $(document).ready(function(){
   });
 });
 
-
+/*extra method*/
 jQuery.validator.addMethod("valueCheck", function(value, element) {
   return this.optional(element) || (-100 <= value) && (value <= 100);
 }, jQuery.validator.format("Please input a value between -100 & 100"));
