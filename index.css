@@ -5,7 +5,7 @@ Timofey Fayzullin, Umass Lowell Computer Science,
 timofey_fayzullin@student.uml.edu
 Copyright (c) 2021 by Timofey. All rights reserved. May be freely copid or
 excerpted for educational purposes with credit to the author.
-update by TF on October 4th, 2021 at 8:14 PM
+update by TF on October 26th, 2021 at 8:14 PM
 */
 
 /*table customization*/
@@ -48,6 +48,7 @@ body{
   background-image: url("images/background.jpg");
 }
 
+/*tabulation customization*/
 #tabs{
   background-image: url("images/background.jpg");;
 }
@@ -113,6 +114,7 @@ h1{
   margin-right: auto;
 }
 
+/*slider customization*/
 #botrSlider, #toprSlider, #botcSlider, #topcSlider{
   width: 200px;
   margin-left: auto;
@@ -129,7 +131,7 @@ h1{
 #botrSlider .ui-slider-range, #toprSlider .ui-slider-range, #botcSlider .ui-slider-range, #topcSlider .ui-slider-range{
   background: bisque;
 }
-
+ /*error message*/
 .error{
   color: red;
   font-weight: bold;
