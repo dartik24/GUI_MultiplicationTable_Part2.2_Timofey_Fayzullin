@@ -1,0 +1,162 @@
+/*
+File: index.css
+GUI Assignment: Creating a dynamic multiplication table.
+Timofey Fayzullin, Umass Lowell Computer Science,
+timofey_fayzullin@student.uml.edu
+Copyright (c) 2021 by Timofey. All rights reserved. May be freely copid or
+excerpted for educational purposes with credit to the author.
+update by TF on October 4th, 2021 at 8:14 PM
+*/
+
+/*table customization*/
+table, td, th{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td, th{
+  width: 30px;
+  font-size: 20px;
+}
+
+/*table header*/
+th{
+  background-color: grey;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#zer{
+  z-index: 2;
+}
+
+td:hover{
+  background-color: darkgray;
+}
+
+/*paragraph size setup*/
+p{
+  font-size: 20px;
+}
+
+/*body placement and background*/
+body{
+  text-align: center;
+  margin: auto;
+  background-color: antiquewhite;
+  background-image: url("../images/background.jpg");
+}
+
+#tabs{
+  background-image: url("../images/background.jpg");;
+  width: 500px;
+  height: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ui-tabs .ui-tabs-nav
+{
+  background: burlywood;
+}
+
+a{
+  background-color: bisque;
+}
+
+.ui-state-active a
+{
+  background-color: burlywood;
+
+}
+
+/*form and submittion customization*/
+form{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+input{
+  border-color: burlywood;
+  border-style: dashed;
+}
+
+#clickMe{
+  font-size: 15px;
+  margin-bottom: 20px;
+  border-style:solid;
+  border-color: black;
+  border-radius: 12px;
+  width: 100px;
+  height: 30px;
+}
+
+#removeTabs{
+  font-size: 15px;
+  margin-bottom: 20px;
+  border-style:solid;
+  border-color: black;
+  border-radius: 12px;
+  width: 100px;
+  height: 30px;
+}
+
+#removeAll{
+  font-size: 15px;
+  margin-bottom: 20px;
+  border-style:solid;
+  border-color: black;
+  border-radius: 12px;
+  width: 100px;
+  height: 30px;
+}
+
+/*error text customization*/
+#errors{
+  font-size:medium;
+  font-weight: bold;
+}
+
+/*header text customization*/
+h1{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size:xx-large;
+  font-style: italic;
+}
+
+/*table container customization*/
+#tablediv{
+  height: 400px;
+  width: 400px;
+  overflow:auto; 
+  margin-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#botrSlider, #toprSlider, #botcSlider, #topcSlider{
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: burlywood;
+}
+
+#botrSlider .ui-slider-handle, #toprSlider .ui-slider-handle, #botcSlider .ui-slider-handle, #topcSlider .ui-slider-handle{
+  background: burlywood;
+}
+
+#botrSlider .ui-slider-range, #toprSlider .ui-slider-range, #botcSlider .ui-slider-range, #topcSlider .ui-slider-range{
+  background: bisque;
+}
+
+.error{
+  color: red;
+  font-weight: bold;
+  margin: auto;
+  position: top;
+}
+
